@@ -9,13 +9,35 @@ body {
   max-width: 2550px;
   scroll-behavior: smooth;
 }
+
+ul {
+  @include zeromargin-zeropadding;
+  li {
+    @include zeromargin-zeropadding;
+    list-style-type: none;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 // header css start from here
 
 header {
   transition: 0.2s all;
   .main-header {
-    padding-top: 60px;
-    padding-bottom: 14px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     transition: 0.2s all;
     .logo-box {
       img {
@@ -85,7 +107,7 @@ header {
         margin-left: 20px;
         margin-right: 20px;
         a {
-          color: #fff;
+          color: #000;
           text-align: center;
 
           font-size: 16px;
@@ -93,52 +115,8 @@ header {
           font-weight: 400;
           line-height: 150%;
         }
-        ul.sub-menu {
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          top: calc(100% + 7px);
-          inset-inline-start: 0;
-          min-width: 180px;
-          visibility: hidden;
-          opacity: 0;
-          transform-origin: top center;
-          align-items: start;
-          gap: 0;
-          text-align: left;
-          transform: translateY(10px);
-          transition: all 0.3s 0s ease-out;
-          min-width: 261px;
-          li {
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
 
-            a {
-              color: #fff;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 150%;
-              text-transform: uppercase;
-              background: #706f6f;
-              padding: 12px 17px;
-              display: block;
-              width: 100%;
-              text-align: left;
-              @include transition-four;
-              &:hover {
-                background: red;
-              }
-            }
-          }
-        }
         &:hover {
-          > ul.sub-menu {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0px);
-          }
         }
       }
     }
@@ -153,7 +131,7 @@ header {
     ul {
       li {
         a {
-          color: #fff;
+          color: #000;
           img.dark-icon {
             display: none;
           }

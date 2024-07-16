@@ -6,12 +6,30 @@ body {
   scroll-behavior: smooth;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 header {
   transition: 0.2s all;
 }
 header .main-header {
-  padding-top: 60px;
-  padding-bottom: 14px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   transition: 0.2s all;
 }
 header .main-header .logo-box img {
@@ -77,60 +95,12 @@ header .main-header ul li {
   margin-right: 20px;
 }
 header .main-header ul li a {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-}
-header .main-header ul li ul.sub-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: calc(100% + 7px);
-  inset-inline-start: 0;
-  min-width: 180px;
-  visibility: hidden;
-  opacity: 0;
-  transform-origin: top center;
-  align-items: start;
-  gap: 0;
-  text-align: left;
-  transform: translateY(10px);
-  transition: all 0.3s 0s ease-out;
-  min-width: 261px;
-}
-header .main-header ul li ul.sub-menu li {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-header .main-header ul li ul.sub-menu li a {
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-  text-transform: uppercase;
-  background: #706f6f;
-  padding: 12px 17px;
-  display: block;
-  width: 100%;
-  text-align: left;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-header .main-header ul li ul.sub-menu li a:hover {
-  background: red;
-}
-header .main-header ul li:hover > ul.sub-menu {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0px);
 }
 header .main-header.transparent-header {
   position: fixed;
@@ -141,7 +111,7 @@ header .main-header.transparent-header {
   background: transparent;
 }
 header .main-header.transparent-header ul li a {
-  color: #fff;
+  color: #000;
 }
 header .main-header.transparent-header ul li a img.dark-icon {
   display: none;
