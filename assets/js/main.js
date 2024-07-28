@@ -105,5 +105,61 @@
       }
     }
     // sidebar slideup and down
+
+    var swiper = new Swiper('.partner-slider', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 50,
+      autoplay: false,
+      speed: 5000,
+      pagination: false,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1366: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    // Initialize Swiper
+    var swiper = new Swiper('.partner-slider', {
+      on: {
+        init: function () {
+          setSlideWidths();
+        },
+        slideChange: function () {
+          setSlideWidths();
+        },
+        resize: function () {
+          setSlideWidths();
+        },
+      },
+    });
+
+    function setSlideWidths() {
+      var slides = document.querySelectorAll('.swiper-slide');
+      slides.forEach(function (slide) {
+        var element = slide.querySelector('.element');
+        if (element) {
+          slide.style.width = element.offsetWidth + 'px';
+          slide.style.marginRight = 50 + 'px';
+        }
+      });
+    }
+
+    // Initial call to set widths on page load
+    setSlideWidths();
   });
 })(jQuery);

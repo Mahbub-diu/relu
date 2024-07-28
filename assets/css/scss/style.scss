@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   max-width: 2550px;
   scroll-behavior: smooth;
+  font-family: $lexend;
 }
 
 ul {
@@ -20,6 +21,7 @@ ul {
 
 @for $i from 1 through 6 {
   h#{$i} {
+    font-family: $lexend;
   }
 }
 
@@ -41,10 +43,8 @@ header {
     transition: 0.2s all;
     .logo-box {
       img {
-        max-width: 188px;
-      }
-      img.show-scroll {
-        display: none;
+        max-width: 120px;
+        @include transition-four;
       }
     }
     .header-flex {
@@ -52,6 +52,8 @@ header {
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      max-width: 1200px;
+      margin: 0px auto;
       .header-bar {
         display: none;
         position: relative;
@@ -107,9 +109,9 @@ header {
         margin-left: 20px;
         margin-right: 20px;
         a {
-          color: #000;
+          color: #0c233f;
           text-align: center;
-
+          text-transform: capitalize;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
@@ -131,7 +133,7 @@ header {
     ul {
       li {
         a {
-          color: #000;
+          color: #0c233f;
           img.dark-icon {
             display: none;
           }
@@ -153,13 +155,7 @@ header {
 
     .logo-box {
       img {
-        max-width: 188px;
-      }
-      img.show-scroll {
-        display: unset;
-      }
-      img.hide-scroll {
-        display: none;
+        max-width: 96px;
       }
     }
     .bars {
@@ -249,6 +245,7 @@ header {
         > li {
           > a {
             text-transform: uppercase;
+            font-family: $lexend;
           }
         }
       }
@@ -300,7 +297,7 @@ header {
             display: none;
             li {
               a {
-                color: #000;
+                color: #0c233f;
                 font-size: 14px;
               }
               &:hover {
@@ -359,4 +356,275 @@ header {
   visibility: hidden;
   opacity: 0;
   top: -100%;
+}
+
+// main banner section start from here
+.relu-banner-main {
+  .banner-contents {
+    max-width: 740px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 120px;
+    h1 {
+      margin-bottom: 2rem;
+      color: $midnight-blue;
+      text-align: center;
+      margin-top: 0;
+      font-size: 3rem;
+      font-style: normal;
+      line-height: 130%;
+      position: relative;
+      font-family: $lexend;
+      font-weight: 700;
+      span {
+        border-bottom: 4px solid #fe7d00;
+      }
+    }
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 150%;
+      font-size: 1rem;
+      font-weight: 300;
+      color: $midnight-blue;
+    }
+    .banner-button-flex {
+      justify-content: center;
+      display: flex;
+      gap: 1rem;
+      a {
+        @include transition-four;
+
+        &:nth-child(1) {
+          border: 2px solid $dark-orange;
+          color: $midnight-blue;
+          text-align: center;
+          background-color: rgba(255, 255, 255, 0);
+          border-radius: 9px;
+          align-self: center;
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+          font-weight: 400;
+          display: block;
+          &:hover {
+            background-color: $dark-orange;
+          }
+        }
+        &:nth-child(2) {
+          border: 2px solid $midnight-blue;
+          color: #fff;
+          background-color: $midnight-blue;
+          text-align: center;
+          border-radius: 9px;
+          align-self: center;
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+          font-weight: 400;
+          display: block;
+        }
+      }
+    }
+  }
+}
+// main banner section ends here
+.animated-banner-main {
+  .image-box {
+    width: 860px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+  }
+}
+
+.partner-main {
+  background: $alice-blue;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  .title-box {
+    max-width: 1200px;
+    margin: 0px auto;
+
+    h3 {
+      color: $midnight-blue;
+      text-align: center;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      margin-bottom: 80px;
+    }
+  }
+
+  .swiper-slide {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-height: 100px;
+    }
+    img.partner-1 {
+      height: 90px;
+    }
+    img.partner-2 {
+      height: 100px;
+    }
+    img.partner-3 {
+      height: 57px;
+    }
+    img.partner-4 {
+      height: 36px;
+    }
+    img.partner-5 {
+      height: 100px;
+    }
+    img.partner-6 {
+      height: 100px;
+    }
+    img.partner-7 {
+      height: 85px;
+    }
+    img.partner-8 {
+      height: 100px;
+    }
+  }
+}
+
+.relu-shape {
+  z-index: -1;
+  background-color: $alice-blue;
+  justify-content: flex-end;
+  margin-top: -2px;
+  display: flex;
+  position: relative;
+  bottom: -1px;
+  .relu-shape-img {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.dark-blue-main {
+  background-color: $midnight-blue;
+  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .title-box {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  h3 {
+    margin-bottom: 80px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+  .feature-container {
+    gap: 80px;
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 120px;
+    .image-box {
+      width: 560px;
+    }
+    .contents {
+      width: calc(100% - 640px);
+      h5 {
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.25rem;
+        line-height: 130%;
+        margin-bottom: 1rem;
+      }
+      .ortho-list-item {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+
+        .check-icon {
+          margin-right: 1rem;
+        }
+        p {
+          margin-bottom: 0;
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 180%;
+        }
+      }
+      p.all-done {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 180%;
+        margin-bottom: 40px;
+      }
+      a {
+        color: #fff;
+        border: 2px solid $dark-orange;
+        margin-bottom: 0;
+        font-weight: 300;
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 9px;
+        @include transition-four;
+        &:hover {
+          background: $dark-orange;
+        }
+      }
+    }
+  }
+  .collection-grid-parent {
+    column-gap: 80px;
+    row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    max-width: 1200px;
+    margin: 0px auto;
+    .single-collection {
+      .image-box {
+        height: 180px;
+        margin-bottom: 1rem;
+        img {
+          height: 100%;
+        }
+      }
+      h6 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 180%;
+        font-family: $lexend;
+      }
+    }
+  }
+}
+.relu-shape.negative {
+  z-index: 10;
+  background-color: $midnight-blue;
+  margin-top: 0;
+  margin-bottom: -2px;
+  position: relative;
+  top: -1px;
+  bottom: 0;
+  img {
+    position: relative;
+    bottom: -1px;
+  }
 }
