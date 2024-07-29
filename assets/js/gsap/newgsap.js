@@ -1,5 +1,5 @@
 import { gsap, TimelineLite } from './otherLibs/gsap/all.js';
-import { SplitText } from './src/splitText.js';
+import { ScrollTrigger } from './otherLibs/gsap/ScrollTrigger.js';
 
 // Define the master timeline
 var masterTimeline = gsap.timeline({ delay: 1.2 });
@@ -53,3 +53,43 @@ movingshowcaseParent.addEventListener('mouseleave', resumeAnimation);
 // home project show case moving animation ends here
 
 //====================================================
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('.yellow-shape2', {
+  width: '30%',
+  scrollTrigger: {
+    trigger: '.dark-blue-main',
+    start: 'top top',
+    end: 'bottom top',
+    scrub: true,
+  },
+});
+
+gsap.to('.pink-shape2', {
+  width: '20%',
+  scrollTrigger: {
+    trigger: '.dark-blue-main',
+    start: 'top top',
+    end: 'bottom top',
+    scrub: true,
+  },
+});
+gsap.to('.yellow-shape', {
+  width: '30%',
+  scrollTrigger: {
+    trigger: '.dark-blue-main',
+    start: 'top top',
+    end: 'bottom top',
+    scrub: true,
+  },
+});
+
+gsap.to('.pink-shape', {
+  width: '20%',
+  scrollTrigger: {
+    trigger: '.dark-blue-main',
+    start: 'top top',
+    end: 'bottom top',
+    scrub: true,
+  },
+});
