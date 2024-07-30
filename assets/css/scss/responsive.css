@@ -42,6 +42,9 @@
   .partner-main .swiper-slide img {
     height: auto !important;
   }
+  .partner-main .swiper-slide img.partner-3 {
+    height: 57px !important;
+  }
   .dark-blue-main {
     padding: 50px 0;
   }
@@ -182,9 +185,9 @@
   }
   .clients-review-main .review-grid-parent {
     display: grid;
-    grid-template-columns: 1fr;
-    -moz-column-gap: 40px;
-    column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
     max-width: 100%;
   }
   .clients-review-main .review-grid-parent .single-grid .review-title {
@@ -201,6 +204,7 @@
   }
   .clients-review-main .review-grid-parent .single-grid .quote-box {
     padding: 20px;
+    margin-bottom: 30px;
   }
   .clients-review-main .review-grid-parent .single-grid .quote-box p {
     font-size: 15px;
@@ -223,19 +227,27 @@
     margin-bottom: 30px;
   }
   .userfull-tabs-main .tabs-parent .nav-tabs li.nav-item {
-    width: 100%;
+    width: 33.33%;
   }
   .userfull-tabs-main .tabs-parent .nav-tabs li.nav-item button.nav-link {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .userfull-tabs-main .tabs-parent .nav-tabs li.nav-item:nth-child(1) {
+    width: 50%;
+  }
+  .userfull-tabs-main .tabs-parent .nav-tabs li.nav-item:nth-child(2) {
+    width: 50%;
   }
   .userfull-tabs-main .tabs-parent .tab-content .contents-flex {
     gap: 30px;
   }
   .userfull-tabs-main .tabs-parent .tab-content .contents-flex .image-box {
-    width: 100%;
+    width: 40%;
   }
   .userfull-tabs-main .tabs-parent .tab-content .contents-flex .contents {
-    width: 100%;
+    width: calc(60% - 30px);
   }
   .userfull-tabs-main .tabs-parent .tab-content .contents-flex .contents a {
     padding: 10px 17px !important;
@@ -251,7 +263,7 @@
     padding: 40px 20px;
   }
   .learn-more-main .learn-more-bg img {
-    max-width: 60%;
+    max-width: 45%;
     z-index: 0;
   }
   .learn-more-main .learn-more-bg .contents {

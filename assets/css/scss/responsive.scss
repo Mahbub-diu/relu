@@ -78,6 +78,9 @@
       img {
         height: auto !important;
       }
+      img.partner-3 {
+        height: 57px !important;
+      }
     }
   }
   .dark-blue-main {
@@ -230,9 +233,9 @@
     padding: 50px 0;
     .review-grid-parent {
       display: grid;
-      grid-template-columns: 1fr;
-      -moz-column-gap: 40px;
-      column-gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
       max-width: 100%;
       .single-grid {
         .review-title {
@@ -249,6 +252,7 @@
         }
         .quote-box {
           padding: 20px;
+          margin-bottom: 30px;
           p {
             font-size: 15px;
           }
@@ -279,9 +283,17 @@
     .tabs-parent {
       .nav-tabs {
         li.nav-item {
-          width: 100%;
+          width: 33.33%;
           button.nav-link {
             width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+          &:nth-child(1) {
+            width: 50%;
+          }
+          &:nth-child(2) {
+            width: 50%;
           }
         }
       }
@@ -289,10 +301,10 @@
         .contents-flex {
           gap: 30px;
           .image-box {
-            width: 100%;
+            width: 40%;
           }
           .contents {
-            width: 100%;
+            width: calc(60% - 30px);
             a {
               padding: 10px 17px !important;
               font-size: 15px;
@@ -310,7 +322,7 @@
     .learn-more-bg {
       padding: 40px 20px;
       img {
-        max-width: 60%;
+        max-width: 45%;
         z-index: 0;
       }
       .contents {
