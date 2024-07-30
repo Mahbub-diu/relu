@@ -55,7 +55,6 @@ header {
       max-width: 1200px;
       margin: 0px auto;
       .header-bar {
-        display: none;
         position: relative;
         width: 25px;
         height: 20px;
@@ -72,7 +71,7 @@ header {
           -ms-transition: all 0.4s ease-in-out;
           -o-transition: all 0.4s ease-in-out;
           left: 0;
-          background-color: #fff;
+          background-color: $midnight-blue;
           &:first-child {
             top: 0;
           }
@@ -129,7 +128,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 99999;
-    background: transparent;
+    background: #fff;
     ul {
       li {
         a {
@@ -183,63 +182,19 @@ header {
 // header css ends here
 .sidebar-area {
   position: fixed;
-  top: 0;
+  top: 74px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 74px);
   background: #fff;
   overflow: hidden;
   overflow-y: auto;
-  z-index: 99999;
+  z-index: 99;
   @include transition-four;
-  .sidebar-header {
-    padding: 13px 17px;
-    background: red;
-    box-shadow: 0px 4px 32px 0px rgba(0, 100, 158, 0.08);
-    .sidebar-header-flex {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 40px;
-      justify-content: space-between;
-      .header-bar {
-        position: relative;
-        width: 25px;
-        height: 20px;
-        cursor: pointer;
-        span {
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          display: inline-block;
-          @include transition-four;
-          left: 0;
-          background-color: #fff;
 
-          &:first-child {
-            top: 0;
-            transform: rotate(45deg) translate(3px, 9px);
-          }
-          &:nth-child(2) {
-            top: 44%;
-            opacity: 0;
-          }
-          &:last-child {
-            bottom: 0;
-            transform: rotate(-45deg) translate(3px, -9px);
-          }
-        }
-      }
-      .logobox {
-        img {
-          max-width: 120px;
-        }
-      }
-    }
-  }
   .sidebar-contents {
     padding: 29px 24px;
-
+    padding-top: 0;
     .mobile-menu-items {
       > ul {
         > li {
@@ -259,16 +214,16 @@ header {
             position: relative;
             display: block;
             text-decoration: none;
-            background: red;
+            background: $midnight-blue;
             transition: $transition-4-einout;
             -webkit-transition: $transition-4-einout;
             -moz-transition: $transition-4-einout;
             -ms-transition: $transition-4-einout;
             -o-transition: $transition-4-einout;
 
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 22px;
             color: #fff;
             padding: 8px 12px;
             margin-bottom: 4px;
@@ -880,6 +835,7 @@ header {
             }
           }
           .text {
+            width: calc(100% - 68px);
             h4 {
               color: $midnight-blue;
               font-family: $lexend;
