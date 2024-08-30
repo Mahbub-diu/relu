@@ -661,63 +661,7 @@ header {
     text-align: center;
     color: #fff;
   }
-  .feature-container {
-    gap: 80px;
-    display: flex;
-    // max-width: 1200px;
-    margin: 0px auto;
-    margin-bottom: 120px;
-    .image-box {
-      width: 560px;
-    }
-    .contents {
-      width: calc(100% - 640px);
-      h5 {
-        font-weight: 600;
-        color: #fff;
-        font-size: 1.25rem;
-        line-height: 130%;
-        margin-bottom: 1rem;
-      }
-      .ortho-list-item {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        display: flex;
 
-        .check-icon {
-          margin-right: 1rem;
-        }
-        p {
-          margin-bottom: 0;
-          font-weight: 300;
-          font-size: 1rem;
-          line-height: 180%;
-        }
-      }
-      p.all-done {
-        font-weight: 300;
-        font-size: 1rem;
-        line-height: 180%;
-        margin-bottom: 40px;
-      }
-      a {
-        color: #fff;
-        border: 2px solid $dark-orange;
-        margin-bottom: 0;
-        font-weight: 300;
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-        border-radius: 9px;
-        @include transition-four;
-        &:hover {
-          background: $dark-orange;
-        }
-      }
-    }
-  }
   .collection-grid-parent {
     column-gap: 80px;
     row-gap: 80px;
@@ -734,7 +678,7 @@ header {
         background: #fff;
       }
       .image-box {
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.5rem !important;
         img {
           height: 100%;
           width: 100%;
@@ -1278,6 +1222,8 @@ footer {
     p {
       color: $white;
       margin-bottom: 0;
+      font-size: 15px;
+      font-family: $lexend;
     }
   }
 }

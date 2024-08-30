@@ -1,3 +1,22 @@
+@media (min-width: 1300px) and (max-width: 1365px) {
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 25px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .home-slider-main .swiper-slide .slider-cotentbox p {
+    text-align: center;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 750px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+}
 @media (min-width: 1300px) {
   header .main-header .header-bar {
     display: none;
@@ -8,27 +27,102 @@
     display: none;
   }
 }
-@media (min-width: 992px) and (max-width: 1024px) {
-  .relu-banner-main .banner-contents {
-    max-width: 100%;
-    margin-top: 90px;
-    margin-bottom: 50px;
+@media (min-width: 1025px) and (max-width: 1299px) {
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 40px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
   }
-  .relu-banner-main .banner-contents h1 {
+  .home-slider-main .swiper-slide .slider-cotentbox h1 {
+    font-size: 35px !important;
+    line-height: 50px !important;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 700px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+  .contact-main {
+    padding: 50px 0;
+  }
+  .contact-main .contact-sidebar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact-main .contact-sidebar ul li a {
+    font-size: 14px;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footer-main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-logo {
     margin-bottom: 20px;
-    font-size: 35px;
-    line-height: 50px;
   }
-  .relu-banner-main .banner-contents p {
-    max-width: 100%;
-    font-size: 16px;
+  footer .footer-main .footer-logo img {
+    max-width: 150px;
   }
-  .relu-banner-main .banner-contents .banner-button-flex {
-    flex-wrap: wrap;
+  footer .footer-main .footer-common-box h5 {
+    font-size: 20px;
   }
-  .relu-banner-main .banner-contents .banner-button-flex a {
-    padding: 10px 17px !important;
-    font-size: 16px;
+  footer .footer-main .footer-common-box p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 40px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .home-slider-main .swiper-slide .slider-cotentbox h1 {
+    font-size: 35px !important;
+    line-height: 50px !important;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 700px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+  .contact-main {
+    padding: 50px 0;
+  }
+  .contact-main .contact-sidebar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact-main .contact-sidebar ul li a {
+    font-size: 14px;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footer-main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-logo {
+    margin-bottom: 20px;
+  }
+  footer .footer-main .footer-logo img {
+    max-width: 150px;
+  }
+  footer .footer-main .footer-common-box h5 {
+    font-size: 20px;
+  }
+  footer .footer-main .footer-common-box p {
+    font-size: 15px;
   }
   .partner-main {
     padding: 50px 0;
@@ -285,26 +379,52 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .relu-banner-main .banner-contents {
-    max-width: 100%;
-    margin-top: 90px;
-    margin-bottom: 50px;
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 40px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
   }
-  .relu-banner-main .banner-contents h1 {
+  .home-slider-main .swiper-slide .slider-cotentbox h1 {
+    font-size: 35px !important;
+    line-height: 50px !important;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 700px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+  .contact-main {
+    padding: 50px 0;
+  }
+  .contact-main .contact-sidebar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact-main .contact-sidebar ul li a {
+    font-size: 14px;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footer-main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-logo {
     margin-bottom: 20px;
-    font-size: 35px;
-    line-height: 50px;
   }
-  .relu-banner-main .banner-contents p {
-    max-width: 100%;
-    font-size: 16px;
+  footer .footer-main .footer-logo img {
+    max-width: 150px;
   }
-  .relu-banner-main .banner-contents .banner-button-flex {
-    flex-wrap: wrap;
+  footer .footer-main .footer-common-box h5 {
+    font-size: 20px;
   }
-  .relu-banner-main .banner-contents .banner-button-flex a {
-    padding: 10px 17px !important;
-    font-size: 16px;
+  footer .footer-main .footer-common-box p {
+    font-size: 15px;
   }
   .partner-main {
     padding: 50px 0;
@@ -570,26 +690,55 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .relu-banner-main .banner-contents {
-    max-width: 100%;
-    margin-top: 90px;
-    margin-bottom: 50px;
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 40px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
   }
-  .relu-banner-main .banner-contents h1 {
+  .home-slider-main .swiper-slide .slider-cotentbox h1 {
+    font-size: 25px !important;
+    line-height: 40px !important;
+  }
+  .home-slider-main .swiper-slide .slider-cotentbox p {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 600px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+  .contact-main {
+    padding: 50px 0;
+  }
+  .contact-main .contact-sidebar {
+    padding-left: 20px;
+  }
+  .contact-main .map-box {
+    margin-top: 30px;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footer-main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-logo {
     margin-bottom: 20px;
-    font-size: 35px;
-    line-height: 50px;
   }
-  .relu-banner-main .banner-contents p {
-    max-width: 100%;
-    font-size: 16px;
+  footer .footer-main .footer-logo img {
+    max-width: 150px;
   }
-  .relu-banner-main .banner-contents .banner-button-flex {
-    flex-wrap: wrap;
+  footer .footer-main .footer-common-box h5 {
+    font-size: 20px;
   }
-  .relu-banner-main .banner-contents .banner-button-flex a {
-    padding: 10px 17px !important;
-    font-size: 16px;
+  footer .footer-main .footer-common-box p {
+    font-size: 15px;
   }
   .partner-main {
     padding: 50px 0;
@@ -843,6 +992,56 @@
   }
 }
 @media (min-width: 415px) and (max-width: 575px) {
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 40px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .home-slider-main .swiper-slide .slider-cotentbox h1 {
+    font-size: 25px !important;
+    line-height: 40px !important;
+  }
+  .home-slider-main .swiper-slide .slider-cotentbox p {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 500px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+  .contact-main {
+    padding: 50px 0;
+  }
+  .contact-main .contact-sidebar {
+    padding-left: 20px;
+  }
+  .contact-main .map-box {
+    margin-top: 30px;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footer-main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-logo {
+    margin-bottom: 20px;
+  }
+  footer .footer-main .footer-logo img {
+    max-width: 150px;
+  }
+  footer .footer-main .footer-common-box h5 {
+    font-size: 20px;
+  }
+  footer .footer-main .footer-common-box p {
+    font-size: 15px;
+  }
   .relu-banner-main .banner-contents {
     max-width: 100%;
     margin-top: 90px;
@@ -1112,27 +1311,55 @@
   }
 }
 @media (max-width: 414px) {
-  .relu-banner-main .banner-contents {
-    max-width: 100%;
-    margin-top: 90px;
-    margin-bottom: 50px;
+  .home-slider-main .swiper-slide .slider-cotentbox {
+    width: 100%;
+    top: calc(50% + 40px) !important;
+    padding-left: 17px;
+    padding-right: 17px;
   }
-  .relu-banner-main .banner-contents h1 {
+  .home-slider-main .swiper-slide .slider-cotentbox h1 {
+    font-size: 25px !important;
+    line-height: 40px !important;
+  }
+  .home-slider-main .swiper-slide .slider-cotentbox p {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+  .home-slider-main .swiper-slide .slide-bg,
+  .home-slider-main .swiper-slide .video-bg {
+    height: 500px;
+  }
+  .home-slider-main .swiper-slide .slide-bg video,
+  .home-slider-main .swiper-slide .video-bg video {
+    height: 100%;
+  }
+  .contact-main {
+    padding: 50px 0;
+  }
+  .contact-main .contact-sidebar {
+    padding-left: 20px;
+  }
+  .contact-main .map-box {
+    margin-top: 30px;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+  footer .footer-main {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  footer .footer-main .footer-logo {
     margin-bottom: 20px;
-    font-size: 25px;
-    line-height: 45px;
   }
-  .relu-banner-main .banner-contents p {
-    max-width: 100%;
+  footer .footer-main .footer-logo img {
+    max-width: 150px;
+  }
+  footer .footer-main .footer-common-box h5 {
+    font-size: 20px;
+  }
+  footer .footer-main .footer-common-box p {
     font-size: 15px;
-  }
-  .relu-banner-main .banner-contents .banner-button-flex {
-    flex-wrap: wrap;
-  }
-  .relu-banner-main .banner-contents .banner-button-flex a {
-    padding: 10px 17px !important;
-    font-size: 15px;
-    min-width: 240px;
   }
   .partner-main {
     padding: 50px 0;

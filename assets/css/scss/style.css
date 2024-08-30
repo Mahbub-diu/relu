@@ -601,65 +601,6 @@ header .main-header.sticky ul li a img.dark-icon {
   text-align: center;
   color: #fff;
 }
-.dark-blue-main .feature-container {
-  gap: 80px;
-  display: flex;
-  margin: 0px auto;
-  margin-bottom: 120px;
-}
-.dark-blue-main .feature-container .image-box {
-  width: 560px;
-}
-.dark-blue-main .feature-container .contents {
-  width: calc(100% - 640px);
-}
-.dark-blue-main .feature-container .contents h5 {
-  font-weight: 600;
-  color: #fff;
-  font-size: 1.25rem;
-  line-height: 130%;
-  margin-bottom: 1rem;
-}
-.dark-blue-main .feature-container .contents .ortho-list-item {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-}
-.dark-blue-main .feature-container .contents .ortho-list-item .check-icon {
-  margin-right: 1rem;
-}
-.dark-blue-main .feature-container .contents .ortho-list-item p {
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 180%;
-}
-.dark-blue-main .feature-container .contents p.all-done {
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 180%;
-  margin-bottom: 40px;
-}
-.dark-blue-main .feature-container .contents a {
-  color: #fff;
-  border: 2px solid #fe7d00;
-  margin-bottom: 0;
-  font-weight: 300;
-  display: inline-block;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 9px;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-.dark-blue-main .feature-container .contents a:hover {
-  background: #fe7d00;
-}
 .dark-blue-main .collection-grid-parent {
   -moz-column-gap: 80px;
        column-gap: 80px;
@@ -678,7 +619,7 @@ header .main-header.sticky ul li a img.dark-icon {
   background: #fff;
 }
 .dark-blue-main .collection-grid-parent .single-collection .image-box {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem !important;
 }
 .dark-blue-main .collection-grid-parent .single-collection .image-box img {
   height: 100%;
@@ -1189,6 +1130,8 @@ footer .copyright-footer {
 footer .copyright-footer p {
   color: #fff;
   margin-bottom: 0;
+  font-size: 15px;
+  font-family: "Lexend", sans-serif;
 }
 
 .contact-main {

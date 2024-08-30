@@ -5,10 +5,10 @@
       effect: 'fade',
       speed: 2000,
 
-      autoplay: {
-        delay: 5000,
-      },
-      autoplay: true,
+      // autoplay: {
+      //   delay: 5000,
+      // },
+      // autoplay: true,
 
       loop: true,
 

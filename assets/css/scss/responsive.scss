@@ -3,6 +3,27 @@
 // min width 1366px and max width 1440px ends here
 
 @media (min-width: 1300px) and (max-width: 1365px) {
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 25px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+
+        p {
+          text-align: center;
+        }
+      }
+      .slide-bg,
+      .video-bg {
+        height: 750px;
+        video {
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 // min width 1300px and max width 1365px ends here
 
@@ -31,34 +52,127 @@
 // max widht 1299px ends here
 
 @media (min-width: 1025px) and (max-width: 1299px) {
+  // v2 start here
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 40px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+        h1 {
+          font-size: 35px !important;
+          line-height: 50px !important;
+        }
+      }
+      .slide-bg,
+      .video-bg {
+        height: 700px;
+        video {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .contact-main {
+    padding: 50px 0;
+    .contact-sidebar {
+      padding-left: 20px;
+      padding-right: 20px;
+      ul {
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding-bottom: 0 !important;
+    .footer-main {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      .footer-logo {
+        margin-bottom: 20px;
+        img {
+          max-width: 150px;
+        }
+      }
+      .footer-common-box {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // v2 end here
 }
 
 // min width 1025px and max width 1299px ends here
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  .relu-banner-main {
-    .banner-contents {
-      max-width: 100%;
-      margin-top: 90px;
-      margin-bottom: 50px;
-      h1 {
-        margin-bottom: 20px;
-        font-size: 35px;
-        line-height: 50px;
+  // v2 start here
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 40px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+        h1 {
+          font-size: 35px !important;
+          line-height: 50px !important;
+        }
       }
-      p {
-        max-width: 100%;
-        font-size: 16px;
-      }
-      .banner-button-flex {
-        flex-wrap: wrap;
-        a {
-          padding: 10px 17px !important;
-          font-size: 16px;
+      .slide-bg,
+      .video-bg {
+        height: 700px;
+        video {
+          height: 100%;
         }
       }
     }
   }
+  .contact-main {
+    padding: 50px 0;
+    .contact-sidebar {
+      padding-left: 20px;
+      padding-right: 20px;
+      ul {
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding-bottom: 0 !important;
+    .footer-main {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      .footer-logo {
+        margin-bottom: 20px;
+        img {
+          max-width: 150px;
+        }
+      }
+      .footer-common-box {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // v2 end here
   .partner-main {
     padding: 50px 0;
     padding-bottom: 20px;
@@ -359,29 +473,64 @@
 // min width 992px and max width 1024px ends here
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .relu-banner-main {
-    .banner-contents {
-      max-width: 100%;
-      margin-top: 90px;
-      margin-bottom: 50px;
-      h1 {
-        margin-bottom: 20px;
-        font-size: 35px;
-        line-height: 50px;
+  // v2 start here
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 40px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+        h1 {
+          font-size: 35px !important;
+          line-height: 50px !important;
+        }
       }
-      p {
-        max-width: 100%;
-        font-size: 16px;
-      }
-      .banner-button-flex {
-        flex-wrap: wrap;
-        a {
-          padding: 10px 17px !important;
-          font-size: 16px;
+      .slide-bg,
+      .video-bg {
+        height: 700px;
+        video {
+          height: 100%;
         }
       }
     }
   }
+  .contact-main {
+    padding: 50px 0;
+    .contact-sidebar {
+      padding-left: 20px;
+      padding-right: 20px;
+      ul {
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding-bottom: 0 !important;
+    .footer-main {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      .footer-logo {
+        margin-bottom: 20px;
+        img {
+          max-width: 150px;
+        }
+      }
+      .footer-common-box {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // v2 end here
   .partner-main {
     padding: 50px 0;
     padding-bottom: 20px;
@@ -693,29 +842,63 @@
 // max widht 767px ends here
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .relu-banner-main {
-    .banner-contents {
-      max-width: 100%;
-      margin-top: 90px;
-      margin-bottom: 50px;
-      h1 {
-        margin-bottom: 20px;
-        font-size: 35px;
-        line-height: 50px;
+  // v2 start here
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 40px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+        h1 {
+          font-size: 25px !important;
+          line-height: 40px !important;
+        }
+        p {
+          font-size: 15px !important;
+          text-align: center !important;
+        }
       }
-      p {
-        max-width: 100%;
-        font-size: 16px;
-      }
-      .banner-button-flex {
-        flex-wrap: wrap;
-        a {
-          padding: 10px 17px !important;
-          font-size: 16px;
+      .slide-bg,
+      .video-bg {
+        height: 600px;
+        video {
+          height: 100%;
         }
       }
     }
   }
+  .contact-main {
+    padding: 50px 0;
+    .contact-sidebar {
+      padding-left: 20px;
+    }
+    .map-box {
+      margin-top: 30px;
+    }
+  }
+  footer {
+    padding-bottom: 0 !important;
+    .footer-main {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      .footer-logo {
+        margin-bottom: 20px;
+        img {
+          max-width: 150px;
+        }
+      }
+      .footer-common-box {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // v2 end here
   .partner-main {
     padding: 50px 0;
     padding-bottom: 20px;
@@ -1005,6 +1188,64 @@
 // min width 576px and max width 767px ends here
 
 @media (min-width: 415px) and (max-width: 575px) {
+  // v2 start here
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 40px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+        h1 {
+          font-size: 25px !important;
+          line-height: 40px !important;
+        }
+        p {
+          font-size: 15px !important;
+          text-align: center !important;
+        }
+      }
+      .slide-bg,
+      .video-bg {
+        height: 500px;
+        video {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .contact-main {
+    padding: 50px 0;
+    .contact-sidebar {
+      padding-left: 20px;
+    }
+    .map-box {
+      margin-top: 30px;
+    }
+  }
+  footer {
+    padding-bottom: 0 !important;
+    .footer-main {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      .footer-logo {
+        margin-bottom: 20px;
+        img {
+          max-width: 150px;
+        }
+      }
+      .footer-common-box {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // v2 end here
+
   .relu-banner-main {
     .banner-contents {
       max-width: 100%;
@@ -1315,30 +1556,63 @@
 // min width 415px and max width 575px ends here
 
 @media (max-width: 414px) {
-  .relu-banner-main {
-    .banner-contents {
-      max-width: 100%;
-      margin-top: 90px;
-      margin-bottom: 50px;
-      h1 {
-        margin-bottom: 20px;
-        font-size: 25px;
-        line-height: 45px;
+  // v2 start here
+  .home-slider-main {
+    .swiper-slide {
+      .slider-cotentbox {
+        width: 100%;
+        top: calc(50% + 40px) !important;
+        padding-left: 17px;
+        padding-right: 17px;
+        h1 {
+          font-size: 25px !important;
+          line-height: 40px !important;
+        }
+        p {
+          font-size: 15px !important;
+          text-align: center !important;
+        }
       }
-      p {
-        max-width: 100%;
-        font-size: 15px;
-      }
-      .banner-button-flex {
-        flex-wrap: wrap;
-        a {
-          padding: 10px 17px !important;
-          font-size: 15px;
-          min-width: 240px;
+      .slide-bg,
+      .video-bg {
+        height: 500px;
+        video {
+          height: 100%;
         }
       }
     }
   }
+  .contact-main {
+    padding: 50px 0;
+    .contact-sidebar {
+      padding-left: 20px;
+    }
+    .map-box {
+      margin-top: 30px;
+    }
+  }
+  footer {
+    padding-bottom: 0 !important;
+    .footer-main {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      .footer-logo {
+        margin-bottom: 20px;
+        img {
+          max-width: 150px;
+        }
+      }
+      .footer-common-box {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  // v2 end here
   .partner-main {
     padding: 50px 0;
     padding-bottom: 20px;
